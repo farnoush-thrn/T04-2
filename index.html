@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Appliance Energy Visualisation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <!-- Logo acts as home button -->
+        <div class="logo-container" id="nav-logo" title="Go to Home">
+            <img src="logo.png" alt="Energy Power Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a id="nav-home">Home</a></li>
+                <li><a id="nav-tvs">Televisions</a></li>
+                <li><a id="nav-about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Appliance Energy Consumption</h1>
+        <div id="content"></div>
+        
+        <div class="responsive-svg-container"></div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Designed by <strong>Farnoush Tahernezhad Javazm</strong></p>
+        <p><em>GenAI Acknowledgement:</em> GitHub Copilot was used to assist in generating the HTML, CSS, and JavaScript structure of this website.</p>
+    </footer>
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    
+    <!-- NEW: T04-4 loader -->
+    <script src="t04-4-load.js"></script>
+
+    <!-- NEW: T04-5 bars chart -->
+    <script src="t04-5-bars.js"></script>
+    
+    <!-- Old js files -->
+    <!-- <script src="energy-d3.js"></script> -->
+    <!-- <script src="t04-3-bars.js"></script> -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
+ 
